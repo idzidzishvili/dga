@@ -37,6 +37,7 @@
                   <span class="text-danger">No requests were made yet.</span>
                   @endif
                </div>
+               {!! $requests->links()!!}
             </div>
          </div>
       </div>

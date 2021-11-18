@@ -15,7 +15,8 @@ class RequestController extends Controller
                         ->select('R.product_id', 'P.name', 'T.token', 'R.ipaddress','R.created_at')
                         ->join('products AS P','P.id','=','R.product_id')
                         ->join('tokens AS T','T.id','=','R.token_id')
-                        ->get();
+                        ->orderBy('created_at', 'DESC')
+                        ->paginate(20);
         
         $pageid = 3;
         $pageTitle = "Requests";

@@ -10121,3 +10121,11 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
+
+.card-body nav[role=navigation] div:nth-child(2) {
+  display: none;
+}
+
+.card-body nav[role=navigation] div:nth-child(1) {
+  margin-top: 15px;
+}
